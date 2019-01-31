@@ -2,11 +2,11 @@ from facebook_imp import *
 
 
 # Create an Ad  within created Adset
-def adcreate(ad_set_id):
+def adcreate(ad_set_id, page_id):
     #Image Hash
     image = AdImage(parent_id=ad_account_id)
     # Provide the absolute path of the image
-    image[AdImage.Field.filename] = '/home/mafia/Downloads/pubg.jpg'
+    image[AdImage.Field.filename] = '/home/asm/Downloads/kid.jpeg'
     image.remote_create()
 
     print(image[AdImage.Field.hash])
@@ -18,7 +18,7 @@ def adcreate(ad_set_id):
         'body': 'Like My Page',
         'name': 'My Creative',
         'title': 'My Page Like Ad',
-        'object_story_spec': {'page_id':'1961041583957344','link_data':{'image_hash':image[AdImage.Field.hash],'link':'https://facebook.com/1961041583957344','message':'try it out'}},
+        'object_story_spec': {'page_id': page_id,'link_data':{'image_hash':image[AdImage.Field.hash],'link':'https://facebook.com/' + page_id,'message':'try it out'}},
     }
     creative = AdAccount(ad_account_id).create_ad_creative(
         fields=fields,

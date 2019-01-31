@@ -8,7 +8,7 @@ from facebook_business.adobjects.adimage import AdImage
 from facebook_business.api import FacebookAdsApi
 
 # User Access Token obtained from Facebook Developer portal
-access_token = 'EAAEAmvRsZCaMBAOGpnY6LaF1D1nKWedYvmZCGrFySjZBOtdXJBHsFdIAXmp6x6Co4ZCCVr7VpoKVaj86ZCXE3zrZB9OLN19bYDh6BLirOGylUpOvw5HZBmxHGwttLwsbq0GjFiyxRCUX5oDp12eWRbNEgdunruQ5J5KeIDD0b2jigZDZD'
+access_token = 'EAAEAmvRsZCaMBAImmjmkJMN0Ojg3wk7FDIamC3Plxn7xoiX0TnnhlNCDbMBCnHGiZCQXpAUcvM3xkzK7NebNVnZC0hWjQUJ35aywZAsqRjW4inZBguygKOaCQMys8veORTLq7flv4xfUbtwniBiMCZAlZCILTghOs8094DR8FNzZCwZDZD'
 
 # AdAcount id
 ad_account_id = 'act_2040033849620997'
